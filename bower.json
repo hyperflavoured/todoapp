@@ -1,0 +1,26 @@
+{
+  "name": "todoapp",
+  "description": "",
+  "main": "index.jade",
+  "authors": [
+    "hyperflavoured <mahirpanther28@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/todoapp/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-route": "^1.6.2",
+    "angular-cookies": "^1.6.2",
+    "oclazyload": "^1.1.0",
+    "bootstrap": "^3.3.7",
+    "ng-table-bundle": "~3"
+  }
+}
