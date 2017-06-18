@@ -5,8 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-//var users = require('./routes/user.js');
+
 
 var app = express();
 
@@ -22,8 +21,25 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+/*===========================================================
+=            mongoose connection with the server            =
+===========================================================*/
+var mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost:27017/todoapp",function(){
+	console.log("mongoose successfully connected to mongodb");
+});
+
+
+/*=====  End of mongoose connection with the server  ======*/
+var index = require('./routes/index.js');
+var views = require('./routes/views.js');
+var users = require('./routes/users.js');
+
 app.use('/', index);
-//app.use('/users', users);
+app.use('/view', views);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

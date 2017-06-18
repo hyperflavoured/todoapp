@@ -1,12 +1,12 @@
 {
   "name": "todoapp",
   "description": "",
-  "main": "index.jade",
+  "main": "./views/index.jade",
   "authors": [
     "hyperflavoured <mahirpanther28@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/hyperflavoured/todoapp",
   "private": true,
   "ignore": [
     "**/.*",
