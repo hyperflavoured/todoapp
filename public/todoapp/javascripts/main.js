@@ -51,12 +51,12 @@
 		})
 		.when('/tasks', {
 			templateUrl: serverRequestAddr.devServerAdd + '/view/tasks', // sends request to server for html page
-			controller: 'taskCtrl',
+			controller: 'tasksCtrl',
 			resolve: {
 				loadAsset: ['$ocLazyLoad', function($ocLazyLoad) {
 					return $ocLazyLoad.load({
 						files : [
-						serverRequestAddr.devServerAdd + 'todoapp/javascripts/controllers/taskCtrl.js',
+						serverRequestAddr.devServerAdd + 'todoapp/javascripts/controllers/tasksCtrl.js',
 						]})
 				}]
 			}

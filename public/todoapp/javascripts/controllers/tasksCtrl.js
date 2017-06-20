@@ -7,7 +7,7 @@
 	* Description
 	*/
 	angular.module('App')
-	.controller('taskCtrl', ['$scope', function($scope){
+	.controller('tasksCtrl', ['$scope', function($scope){
 		
 	}]);
 })();
