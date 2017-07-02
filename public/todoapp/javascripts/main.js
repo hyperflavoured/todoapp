@@ -56,7 +56,7 @@
 				loadAsset: ['$ocLazyLoad', function($ocLazyLoad) {
 					return $ocLazyLoad.load({
 						files : [
-						serverRequestAddr.devServerAdd + 'todoapp/javascripts/controllers/tasksCtrl.js',
+						serverRequestAddr.devServerAdd + '/todoapp/javascripts/controllers/tasksCtrl.js',
 						]})
 				}]
 			}
